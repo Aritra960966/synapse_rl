@@ -1,0 +1,62 @@
+{
+  "scenario_name": "3-Day Assistant Memory Test",
+  "description": "Tests long-range memory recall across 1000 turns",
+  "conversations": [
+    {
+      "day": 1,
+      "turns": [
+        {
+          "turn": 1,
+          "user": "Hi, I'm Alex. I prefer calls after 11 AM.",
+          "expected_memories": ["name:Alex", "call_time:after 11 AM"]
+        },
+        {
+          "turn": 5,
+          "user": "I'm allergic to peanuts.",
+          "expected_memories": ["allergy:peanuts"]
+        },
+        {
+          "turn": 45,
+          "user": "I live in Mumbai, IST timezone.",
+          "expected_memories": ["location:Mumbai", "timezone:IST"]
+        },
+        {
+          "turn": 100,
+          "user": "I'm vegetarian.",
+          "expected_memories": ["dietary:vegetarian"]
+        }
+      ]
+    },
+    {
+      "day": 2,
+      "turns": [
+        {
+          "turn": 450,
+          "user": "Actually, I've started eating fish now.",
+          "expected_memories": ["dietary:pescatarian"],
+          "supersedes": ["dietary:vegetarian"]
+        },
+        {
+          "turn": 460,
+          "user": "Can you suggest a restaurant?",
+          "should_recall": ["dietary:pescatarian", "location:Mumbai"]
+        }
+      ]
+    },
+    {
+      "day": 3,
+      "turns": [
+        {
+          "turn": 937,
+          "user": "Can you call me tomorrow?",
+          "should_recall": ["call_time:after 11 AM", "timezone:IST"]
+        },
+        {
+          "turn": 1000,
+          "user": "What do you know about me?",
+          "should_recall": ["name:Alex", "dietary:pescatarian", "allergy:peanuts", "location:Mumbai"]
+        }
+      ]
+    }
+  ]
+}

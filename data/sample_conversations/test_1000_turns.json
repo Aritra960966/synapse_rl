@@ -1,0 +1,267 @@
+{
+  "metadata": {
+    "dataset_name": "test_1000_turns",
+    "description": "Comprehensive 1000-turn conversation for testing long-range memory recall",
+    "version": "1.0.0",
+    "created": "2024-02-07",
+    "test_categories": [
+      "identity_information",
+      "preferences",
+      "constraints",
+      "commitments",
+      "contradictions",
+      "long_range_recall",
+      "memory_updates"
+    ]
+  },
+  "conversations": [
+    {
+      "phase": "initial_onboarding",
+      "description": "Turns 1-50: User provides basic information",
+      "turns": [
+        {"turn": 1, "user": "Hi, my name is Alex Chen", "memory_type": "identity", "key": "name", "value": "Alex Chen"},
+        {"turn": 2, "user": "I prefer to be called Alex", "memory_type": "preference", "key": "preferred_name", "value": "Alex"},
+        {"turn": 3, "user": "I live in Mumbai, India", "memory_type": "fact", "key": "location", "value": "Mumbai, India"},
+        {"turn": 4, "user": "My timezone is IST", "memory_type": "fact", "key": "timezone", "value": "IST"},
+        {"turn": 5, "user": "I'm allergic to peanuts and shellfish", "memory_type": "constraint", "key": "allergies", "value": "peanuts, shellfish"},
+        {"turn": 6, "user": "I work as a software engineer", "memory_type": "fact", "key": "occupation", "value": "software engineer"},
+        {"turn": 7, "user": "I prefer calls after 11 AM", "memory_type": "constraint", "key": "call_time", "value": "after 11 AM"},
+        {"turn": 8, "user": "My email is alex.chen@techcorp.com", "memory_type": "fact", "key": "email", "value": "alex.chen@techcorp.com"},
+        {"turn": 9, "user": "I'm vegetarian", "memory_type": "preference", "key": "dietary", "value": "vegetarian"},
+        {"turn": 10, "user": "I prefer concise responses", "memory_type": "preference", "key": "communication_style", "value": "concise"},
+        {"turn": 11, "user": "My birthday is March 15th", "memory_type": "fact", "key": "birthday", "value": "March 15"},
+        {"turn": 12, "user": "I speak English, Hindi, and Mandarin", "memory_type": "fact", "key": "languages", "value": "English, Hindi, Mandarin"},
+        {"turn": 13, "user": "I have a dog named Max", "memory_type": "fact", "key": "pet", "value": "dog named Max"},
+        {"turn": 14, "user": "I'm learning to play the guitar", "memory_type": "fact", "key": "hobby", "value": "learning guitar"},
+        {"turn": 15, "user": "I prefer morning meetings", "memory_type": "preference", "key": "meeting_time", "value": "morning"},
+        {"turn": 16, "user": "My manager's name is Sarah Johnson", "memory_type": "entity", "key": "manager", "value": "Sarah Johnson"},
+        {"turn": 17, "user": "I'm working on a machine learning project", "memory_type": "context", "key": "current_project", "value": "machine learning project"},
+        {"turn": 18, "user": "I have a meeting every Monday at 10 AM", "memory_type": "commitment", "key": "weekly_meeting", "value": "Monday 10 AM"},
+        {"turn": 19, "user": "I prefer tea over coffee", "memory_type": "preference", "key": "beverage", "value": "tea"},
+        {"turn": 20, "user": "What's the weather like today?", "memory_type": null, "test": "filler"},
+        {"turn": 21, "user": "I drive a Tesla Model 3", "memory_type": "fact", "key": "car", "value": "Tesla Model 3"},
+        {"turn": 22, "user": "My favorite color is blue", "memory_type": "preference", "key": "favorite_color", "value": "blue"},
+        {"turn": 23, "user": "I exercise every morning at 6 AM", "memory_type": "fact", "key": "exercise_routine", "value": "6 AM daily"},
+        {"turn": 24, "user": "I'm 32 years old", "memory_type": "fact", "key": "age", "value": "32"},
+        {"turn": 25, "user": "I graduated from IIT Mumbai", "memory_type": "fact", "key": "education", "value": "IIT Mumbai"},
+        {"turn": 26, "user": "Can you help me with something?", "memory_type": null, "test": "filler"},
+        {"turn": 27, "user": "I prefer Android over iOS", "memory_type": "preference", "key": "mobile_os", "value": "Android"},
+        {"turn": 28, "user": "My wife's name is Priya", "memory_type": "entity", "key": "spouse", "value": "Priya"},
+        {"turn": 29, "user": "We have two kids", "memory_type": "fact", "key": "children", "value": "two"},
+        {"turn": 30, "user": "I need to pick up kids from school at 3 PM daily", "memory_type": "commitment", "key": "daily_pickup", "value": "3 PM"},
+        {"turn": 31, "user": "Tell me a joke", "memory_type": null, "test": "filler"},
+        {"turn": 32, "user": "I'm planning a vacation to Japan next month", "memory_type": "event", "key": "vacation", "value": "Japan next month"},
+        {"turn": 33, "user": "I prefer aisle seats on flights", "memory_type": "preference", "key": "flight_seat", "value": "aisle"},
+        {"turn": 34, "user": "My passport expires in 2025", "memory_type": "fact", "key": "passport_expiry", "value": "2025"},
+        {"turn": 35, "user": "I'm allergic to cats", "memory_type": "constraint", "key": "pet_allergy", "value": "cats"},
+        {"turn": 36, "user": "What do you think about AI?", "memory_type": null, "test": "filler"},
+        {"turn": 37, "user": "My favorite cuisine is Italian", "memory_type": "preference", "key": "cuisine", "value": "Italian"},
+        {"turn": 38, "user": "I don't like spicy food", "memory_type": "constraint", "key": "food_preference", "value": "no spicy"},
+        {"turn": 39, "user": "I work from home on Fridays", "memory_type": "fact", "key": "wfh_schedule", "value": "Fridays"},
+        {"turn": 40, "user": "My office is in Bandra", "memory_type": "fact", "key": "office_location", "value": "Bandra"},
+        {"turn": 41, "user": "How are you today?", "memory_type": null, "test": "filler"},
+        {"turn": 42, "user": "I have a dentist appointment next Tuesday", "memory_type": "commitment", "key": "dentist", "value": "next Tuesday"},
+        {"turn": 43, "user": "I prefer reading physical books over e-books", "memory_type": "preference", "key": "reading", "value": "physical books"},
+        {"turn": 44, "user": "My blood type is O positive", "memory_type": "fact", "key": "blood_type", "value": "O+"},
+        {"turn": 45, "user": "I'm learning Spanish on Duolingo", "memory_type": "fact", "key": "learning", "value": "Spanish"},
+        {"turn": 46, "user": "What's 2+2?", "memory_type": null, "test": "filler"},
+        {"turn": 47, "user": "I meditate for 20 minutes before bed", "memory_type": "fact", "key": "meditation", "value": "20 min before bed"},
+        {"turn": 48, "user": "I have a peanut allergy, remember that", "memory_type": "constraint", "key": "allergy_reminder", "value": "peanuts"},
+        {"turn": 49, "user": "My favorite movie is Inception", "memory_type": "preference", "key": "favorite_movie", "value": "Inception"},
+        {"turn": 50, "user": "I prefer working with Python", "memory_type": "preference", "key": "programming_language", "value": "Python"}
+      ]
+    },
+    {
+      "phase": "routine_interactions",
+      "description": "Turns 51-200: Regular conversations with occasional recalls",
+      "turns": [
+        {"turn": 51, "user": "What's my name?", "test": "recall", "expected": "Alex Chen"},
+        {"turn": 52, "user": "Good morning", "memory_type": null, "test": "filler"},
+        {"turn": 60, "user": "Can you call me tomorrow?", "test": "recall", "expected": "after 11 AM"},
+        {"turn": 70, "user": "I need to schedule a meeting", "memory_type": null, "test": "filler"},
+        {"turn": 75, "user": "What are my dietary restrictions?", "test": "recall", "expected": "vegetarian, no peanuts"},
+        {"turn": 80, "user": "Tell me about the weather", "memory_type": null, "test": "filler"},
+        {"turn": 90, "user": "Where do I work?", "test": "recall", "expected": "software engineer"},
+        {"turn": 100, "user": "Actually, I started eating fish recently", "memory_type": "preference", "key": "dietary", "value": "pescatarian", "supersedes": "vegetarian"},
+        {"turn": 110, "user": "What's my email address?", "test": "recall", "expected": "alex.chen@techcorp.com"},
+        {"turn": 120, "user": "I got promoted to senior engineer", "memory_type": "fact", "key": "occupation", "value": "senior software engineer", "supersedes": "software engineer"},
+        {"turn": 130, "user": "Can you recommend a restaurant?", "test": "recall", "expected": "pescatarian, Italian, no spicy"},
+        {"turn": 140, "user": "When is my birthday?", "test": "recall", "expected": "March 15"},
+        {"turn": 150, "user": "I moved my workout to evening", "memory_type": "fact", "key": "exercise_routine", "value": "evening", "supersedes": "6 AM daily"},
+        {"turn": 160, "user": "What languages do I speak?", "test": "recall", "expected": "English, Hindi, Mandarin"},
+        {"turn": 170, "user": "My dog Max is 5 years old now", "memory_type": "fact", "key": "pet_age", "value": "Max is 5"},
+        {"turn": 180, "user": "What's my manager's name?", "test": "recall", "expected": "Sarah Johnson"},
+        {"turn": 190, "user": "I prefer video calls over phone calls", "memory_type": "preference", "key": "call_preference", "value": "video calls"},
+        {"turn": 200, "user": "Remind me about my allergies", "test": "recall", "expected": "peanuts, shellfish, cats"}
+      ]
+    },
+    {
+      "phase": "information_updates",
+      "description": "Turns 201-400: Updates and contradictions",
+      "turns": [
+        {"turn": 210, "user": "I changed my email to alex@newcompany.com", "memory_type": "fact", "key": "email", "value": "alex@newcompany.com", "supersedes": "alex.chen@techcorp.com"},
+        {"turn": 220, "user": "What's my current email?", "test": "recall", "expected": "alex@newcompany.com"},
+        {"turn": 230, "user": "I sold my Tesla and bought a BMW", "memory_type": "fact", "key": "car", "value": "BMW", "supersedes": "Tesla Model 3"},
+        {"turn": 240, "user": "I'm now 33 years old", "memory_type": "fact", "key": "age", "value": "33", "supersedes": "32"},
+        {"turn": 250, "user": "Am I still vegetarian?", "test": "recall", "expected": "pescatarian"},
+        {"turn": 260, "user": "My new manager is David Lee", "memory_type": "entity", "key": "manager", "value": "David Lee", "supersedes": "Sarah Johnson"},
+        {"turn": 270, "user": "What car do I drive?", "test": "recall", "expected": "BMW"},
+        {"turn": 280, "user": "I completed my guitar lessons", "memory_type": "fact", "key": "hobby", "value": "completed guitar", "supersedes": "learning guitar"},
+        {"turn": 290, "user": "What's my preferred call time?", "test": "recall", "expected": "after 11 AM"},
+        {"turn": 300, "user": "We adopted a cat named Luna", "memory_type": "fact", "key": "pet", "value": "dog Max, cat Luna"},
+        {"turn": 310, "user": "Wait, I'm allergic to cats!", "test": "contradiction_check", "expected": "recognize conflict"},
+        {"turn": 320, "user": "Actually, I'm taking allergy medication now", "memory_type": "fact", "key": "medical", "value": "taking allergy medication"},
+        {"turn": 330, "user": "I prefer working from home full time now", "memory_type": "preference", "key": "work_preference", "value": "full remote"},
+        {"turn": 340, "user": "Where is my office again?", "test": "recall", "expected": "Bandra"},
+        {"turn": 350, "user": "I switched to iPhone", "memory_type": "preference", "key": "mobile_os", "value": "iOS", "supersedes": "Android"},
+        {"turn": 360, "user": "My kids are in high school now", "memory_type": "fact", "key": "children", "value": "two in high school"},
+        {"turn": 370, "user": "Do you remember my spouse's name?", "test": "recall", "expected": "Priya"},
+        {"turn": 380, "user": "I'm learning French instead of Spanish now", "memory_type": "fact", "key": "learning", "value": "French", "supersedes": "Spanish"},
+        {"turn": 390, "user": "What's my favorite color?", "test": "recall", "expected": "blue"},
+        {"turn": 400, "user": "I changed jobs to AI researcher", "memory_type": "fact", "key": "occupation", "value": "AI researcher", "supersedes": "senior software engineer"}
+      ]
+    },
+    {
+      "phase": "complex_interactions",
+      "description": "Turns 401-600: Complex queries and multi-memory recalls",
+      "turns": [
+        {"turn": 410, "user": "Plan a dinner considering my preferences", "test": "multi_recall", "expected": "pescatarian, Italian, no spicy, no peanuts/shellfish"},
+        {"turn": 420, "user": "What do you know about my family?", "test": "multi_recall", "expected": "Priya (spouse), two kids in high school"},
+        {"turn": 430, "user": "I'm back to being fully vegetarian", "memory_type": "preference", "key": "dietary", "value": "vegetarian", "supersedes": "pescatarian"},
+        {"turn": 440, "user": "Tell me about my daily routine", "test": "multi_recall", "expected": "evening exercise, work from home"},
+        {"turn": 450, "user": "What's changed about my job?", "test": "history_recall", "expected": "engineer -> senior -> AI researcher"},
+        {"turn": 460, "user": "My passport is renewed until 2030", "memory_type": "fact", "key": "passport_expiry", "value": "2030", "supersedes": "2025"},
+        {"turn": 470, "user": "Do I have any pets?", "test": "recall", "expected": "dog Max, cat Luna"},
+        {"turn": 480, "user": "What technology preferences do I have?", "test": "multi_recall", "expected": "Python, iOS"},
+        {"turn": 490, "user": "Cancel the Japan trip", "memory_type": "event", "key": "vacation", "value": "cancelled", "supersedes": "Japan next month"},
+        {"turn": 500, "user": "What's my current diet?", "test": "recall", "expected": "vegetarian"},
+        {"turn": 510, "user": "I prefer afternoon meetings now", "memory_type": "preference", "key": "meeting_time", "value": "afternoon", "supersedes": "morning"},
+        {"turn": 520, "user": "What allergies do I have?", "test": "recall", "expected": "peanuts, shellfish, cats (taking medication)"},
+        {"turn": 530, "user": "My favorite color is now green", "memory_type": "preference", "key": "favorite_color", "value": "green", "supersedes": "blue"},
+        {"turn": 540, "user": "How old am I?", "test": "recall", "expected": "33"},
+        {"turn": 550, "user": "I sold the BMW and use public transport", "memory_type": "fact", "key": "transportation", "value": "public transport", "supersedes": "BMW"},
+        {"turn": 560, "user": "What's my education background?", "test": "recall", "expected": "IIT Mumbai"},
+        {"turn": 570, "user": "Priya and I are planning our anniversary", "memory_type": "event", "key": "anniversary", "value": "planning"},
+        {"turn": 580, "user": "What's my blood type?", "test": "recall", "expected": "O+"},
+        {"turn": 590, "user": "I stopped meditating", "memory_type": "fact", "key": "meditation", "value": "stopped", "supersedes": "20 min before bed"},
+        {"turn": 600, "user": "Where do I live?", "test": "recall", "expected": "Mumbai, India"}
+      ]
+    },
+    {
+      "phase": "long_gap_simulation",
+      "description": "Turns 601-800: Simulating long gaps between interactions",
+      "turns": [
+        {"turn": 610, "user": "Hello, it's been a while", "memory_type": null, "test": "filler"},
+        {"turn": 620, "user": "Do you still remember my name?", "test": "long_recall", "expected": "Alex Chen"},
+        {"turn": 630, "user": "What was my first job title you knew?", "test": "history_recall", "expected": "software engineer"},
+        {"turn": 640, "user": "I turned 34 yesterday", "memory_type": "fact", "key": "age", "value": "34", "supersedes": "33"},
+        {"turn": 650, "user": "What were my original dietary preferences?", "test": "history_recall", "expected": "vegetarian (original)"},
+        {"turn": 660, "user": "Max passed away", "memory_type": "fact", "key": "pet", "value": "cat Luna", "supersedes": "dog Max, cat Luna"},
+        {"turn": 670, "user": "What call preferences did I mention initially?", "test": "long_recall", "expected": "after 11 AM"},
+        {"turn": 680, "user": "I'm working on quantum computing now", "memory_type": "context", "key": "current_project", "value": "quantum computing", "supersedes": "machine learning project"},
+        {"turn": 690, "user": "Do you remember my timezone?", "test": "long_recall", "expected": "IST"},
+        {"turn": 700, "user": "What languages can I speak?", "test": "long_recall", "expected": "English, Hindi, Mandarin"},
+        {"turn": 710, "user": "I got my PhD last month", "memory_type": "fact", "key": "education", "value": "IIT Mumbai, PhD"},
+        {"turn": 720, "user": "What's my spouse's name?", "test": "long_recall", "expected": "Priya"},
+        {"turn": 730, "user": "I prefer coffee now", "memory_type": "preference", "key": "beverage", "value": "coffee", "supersedes": "tea"},
+        {"turn": 740, "user": "When's my birthday?", "test": "long_recall", "expected": "March 15"},
+        {"turn": 750, "user": "We moved to Bangalore", "memory_type": "fact", "key": "location", "value": "Bangalore, India", "supersedes": "Mumbai, India"},
+        {"turn": 760, "user": "Do I have any food allergies?", "test": "long_recall", "expected": "peanuts, shellfish"},
+        {"turn": 770, "user": "I started my own AI company", "memory_type": "fact", "key": "occupation", "value": "AI company founder", "supersedes": "AI researcher"},
+        {"turn": 780, "user": "What's my favorite movie?", "test": "long_recall", "expected": "Inception"},
+        {"turn": 790, "user": "Kids graduated and went to college", "memory_type": "fact", "key": "children", "value": "two in college"},
+        {"turn": 800, "user": "What transportation do I use?", "test": "recall", "expected": "public transport"}
+      ]
+    },
+    {
+      "phase": "stress_test",
+      "description": "Turns 801-900: Rapid updates and recalls",
+      "turns": [
+        {"turn": 801, "user": "Quick, what's my name?", "test": "rapid_recall", "expected": "Alex Chen"},
+        {"turn": 802, "user": "Age?", "test": "rapid_recall", "expected": "34"},
+        {"turn": 803, "user": "Location?", "test": "rapid_recall", "expected": "Bangalore, India"},
+        {"turn": 804, "user": "Job?", "test": "rapid_recall", "expected": "AI company founder"},
+        {"turn": 805, "user": "Spouse?", "test": "rapid_recall", "expected": "Priya"},
+        {"turn": 810, "user": "Actually I'm 35 now", "memory_type": "fact", "key": "age", "value": "35", "supersedes": "34"},
+        {"turn": 815, "user": "Bought a Tesla again", "memory_type": "fact", "key": "car", "value": "Tesla", "supersedes": "public transport"},
+        {"turn": 820, "user": "What's my diet?", "test": "rapid_recall", "expected": "vegetarian"},
+        {"turn": 825, "user": "I'm vegan now", "memory_type": "preference", "key": "dietary", "value": "vegan", "supersedes": "vegetarian"},
+        {"turn": 830, "user": "Allergies?", "test": "rapid_recall", "expected": "peanuts, shellfish, cats"},
+        {"turn": 835, "user": "Adopted another cat, Milo", "memory_type": "fact", "key": "pet", "value": "cats Luna and Milo"},
+        {"turn": 840, "user": "Current project?", "test": "rapid_recall", "expected": "quantum computing"},
+        {"turn": 845, "user": "Working on AGI now", "memory_type": "context", "key": "current_project", "value": "AGI", "supersedes": "quantum computing"},
+        {"turn": 850, "user": "Languages?", "test": "rapid_recall", "expected": "English, Hindi, Mandarin"},
+        {"turn": 855, "user": "Learned Japanese too", "memory_type": "fact", "key": "languages", "value": "English, Hindi, Mandarin, Japanese"},
+        {"turn": 860, "user": "Email?", "test": "rapid_recall", "expected": "alex@newcompany.com"},
+        {"turn": 865, "user": "Now it's alex@myai.com", "memory_type": "fact", "key": "email", "value": "alex@myai.com", "supersedes": "alex@newcompany.com"},
+        {"turn": 870, "user": "Favorite color?", "test": "rapid_recall", "expected": "green"},
+        {"turn": 875, "user": "Back to blue", "memory_type": "preference", "key": "favorite_color", "value": "blue", "supersedes": "green"},
+        {"turn": 880, "user": "Meeting preference?", "test": "rapid_recall", "expected": "afternoon"},
+        {"turn": 885, "user": "No meetings before noon", "memory_type": "constraint", "key": "meeting_time", "value": "after noon"},
+        {"turn": 890, "user": "Education?", "test": "rapid_recall", "expected": "IIT Mumbai, PhD"},
+        {"turn": 895, "user": "Got an MBA too", "memory_type": "fact", "key": "education", "value": "IIT Mumbai, PhD, MBA"},
+        {"turn": 900, "user": "Current beverage preference?", "test": "rapid_recall", "expected": "coffee"}
+      ]
+    },
+    {
+      "phase": "final_comprehensive_test",
+      "description": "Turns 901-1000: Comprehensive recall tests",
+      "turns": [
+        {"turn": 901, "user": "Tell me everything about my dietary history", "test": "complete_history", "expected": "vegetarian -> pescatarian -> vegetarian -> vegan"},
+        {"turn": 910, "user": "What do you know about my career progression?", "test": "complete_history", "expected": "software engineer -> senior -> AI researcher -> founder"},
+        {"turn": 920, "user": "Summarize my family situation", "test": "comprehensive", "expected": "Spouse: Priya, 2 kids in college"},
+        {"turn": 930, "user": "What cities have I lived in?", "test": "history_recall", "expected": "Mumbai -> Bangalore"},
+        {"turn": 937, "user": "Can you call me tomorrow?", "test": "original_constraint", "expected": "after 11 AM, after noon"},
+        {"turn": 940, "user": "What emails have I used?", "test": "complete_history", "expected": "alex.chen@techcorp.com -> alex@newcompany.com -> alex@myai.com"},
+        {"turn": 950, "user": "What are all my known allergies?", "test": "comprehensive", "expected": "peanuts, shellfish, cats"},
+        {"turn": 960, "user": "What pets do I have?", "test": "current_state", "expected": "cats Luna and Milo"},
+        {"turn": 970, "user": "What's my complete education?", "test": "current_state", "expected": "IIT Mumbai, PhD, MBA"},
+        {"turn": 980, "user": "What vehicles have I owned?", "test": "complete_history", "expected": "Tesla Model 3 -> BMW -> public transport -> Tesla"},
+        {"turn": 990, "user": "What's my original name from turn 1?", "test": "extreme_long_recall", "expected": "Alex Chen"},
+        {"turn": 995, "user": "Do you remember I prefer concise responses?", "test": "extreme_long_recall", "expected": "yes, from turn 10"},
+        {"turn": 999, "user": "What was the very first allergy I mentioned?", "test": "extreme_long_recall", "expected": "peanuts (turn 5)"},
+        {"turn": 1000, "user": "Give me a complete profile summary", "test": "final_comprehensive", "expected": "All current active memories"}
+      ]
+    }
+  ],
+  "validation_rules": {
+    "memory_persistence": {
+      "description": "Core memories from early turns should be recallable at turn 1000",
+      "test_cases": [
+        {"turn": 1, "memory": "name: Alex Chen", "recall_at": 1000},
+        {"turn": 5, "memory": "allergy: peanuts", "recall_at": 999},
+        {"turn": 7, "memory": "call_time: after 11 AM", "recall_at": 937}
+      ]
+    },
+    "contradiction_handling": {
+      "description": "Newer information should supersede older information",
+      "test_cases": [
+        {"old": "vegetarian", "new": "vegan", "turn": 825},
+        {"old": "Tesla Model 3", "new": "Tesla", "turn": 815},
+        {"old": "alex.chen@techcorp.com", "new": "alex@myai.com", "turn": 865}
+      ]
+    },
+    "history_tracking": {
+      "description": "System should maintain history of changes",
+      "test_cases": [
+        {"key": "dietary", "history": ["vegetarian", "pescatarian", "vegetarian", "vegan"]},
+        {"key": "occupation", "history": ["software engineer", "senior software engineer", "AI researcher", "AI company founder"]},
+        {"key": "location", "history": ["Mumbai, India", "Bangalore, India"]}
+      ]
+    },
+    "performance_requirements": {
+      "max_latency_ms": 400,
+      "target_latency_ms": 150,
+      "memory_recall_accuracy": 0.90,
+      "contradiction_resolution_accuracy": 0.95
+    }
+  },
+  "expected_metrics": {
+    "total_memories_created": 127,
+    "superseded_memories": 42,
+    "active_memories_at_1000": 85,
+    "long_range_recalls": 23,
+    "contradiction_resolutions": 18,
+    "multi_memory_queries": 12
+  }
+}

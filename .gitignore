@@ -1,0 +1,77 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+venv/
+env/
+ENV/
+*.egg-info/
+dist/
+build/
+*.egg
+
+# Cache and data
+.synapse_cache/
+cache/
+*.cache
+data/exports/*.json
+logs/*.log
+benchmark_cache/
+demo_cache/
+test_cache/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*.swn
+.DS_Store
+Thumbs.db
+
+# Models
+models/*.bin
+models/*.gguf
+models/*.onnx
+
+# Streamlit
+.streamlit/secrets.toml
+*.pyc
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+*.cover
+.hypothesis/
+benchmark_results.json
+
+# Environment
+.env
+*.env.local
+.env.*
+
+# Jupyter
+.ipynb_checkpoints/
+*.ipynb
+
+# Documentation build
+docs/_build/
+docs/_static/
+docs/_templates/
+
+
+hackathon/
+venv/
+env/
+__pycache__/
+*.pyc
+*.pt
+*.pth
+*.bin
+*.ckpt
+*.safetensors
+.env
+.vscode/
