@@ -21,7 +21,7 @@ Synapse-RL is a production-ready long-term memory system that enables AI assista
 
 ```bash
 # Clone repository
-git clone https://github.com/yourusername/synapse-rl.git
+git clone https://github.com/Aritra960966/synapse-rl.git
 cd synapse-rl
 
 # Run setup
